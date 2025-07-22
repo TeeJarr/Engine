@@ -1,0 +1,5 @@
+/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles/RPG.dir
+/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles/package.dir
+/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles/package_source.dir
+/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles/edit_cache.dir
+/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles/rebuild_cache.dir

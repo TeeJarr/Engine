@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Entities.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Entities.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/Entities.cpp",
+  "output": "CMakeFiles/RPG.dir/src/Entities.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Game.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Game.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/Game.cpp",
+  "output": "CMakeFiles/RPG.dir/src/Game.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Menu.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Menu.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/Menu.cpp",
+  "output": "CMakeFiles/RPG.dir/src/Menu.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Player.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Player.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/Player.cpp",
+  "output": "CMakeFiles/RPG.dir/src/Player.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/UI.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/UI.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/UI.cpp",
+  "output": "CMakeFiles/RPG.dir/src/UI.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/init.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/init.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/init.cpp",
+  "output": "CMakeFiles/RPG.dir/src/init.cpp.o"
+}
+]

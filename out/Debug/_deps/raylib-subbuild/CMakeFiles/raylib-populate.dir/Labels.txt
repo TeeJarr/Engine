@@ -1,0 +1,14 @@
+# Target labels
+ raylib-populate
+# Source files and their labels
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule

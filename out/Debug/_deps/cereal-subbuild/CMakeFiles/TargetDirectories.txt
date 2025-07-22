@@ -1,0 +1,3 @@
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/cereal-subbuild/CMakeFiles/cereal-populate.dir
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/cereal-subbuild/CMakeFiles/edit_cache.dir
+/Users/tristan/Coding/cpp/RPG/out/Debug/_deps/cereal-subbuild/CMakeFiles/rebuild_cache.dir
