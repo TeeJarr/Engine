@@ -1,5 +1,5 @@
 #pragma once
-#include "Entities/Player.hpp"
+#include "Entities/Characters/Player.hpp"
 
 #include <memory>
 class UI {

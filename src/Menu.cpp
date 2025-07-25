@@ -1,11 +1,12 @@
 #include "UI/Menu.hpp"
+#include "Engine/Flags.hpp"
 #include "Engine/Opts.hpp"
 #include "raylib.h"
 #include <cstdint>
 #include <print>
 
 Menu::Menu() {
-  set_flag(MENU::MAIN);
+  set_flag(FLAGS::MENU::MAIN);
   std::println("{}", menu_flag);
 }
 
@@ -18,7 +19,7 @@ void Menu::update() {
 }
 
 bool Menu::set_flag(uint8_t menu_flag) {
-  if (menu_flag > MENU::NONE || menu_flag < MENU::MAIN) {
+  if (menu_flag > FLAGS::MENU::NONE || menu_flag < FLAGS::MENU::MAIN) {
     std::println("Error: invalid menu flag");
     return false;
   }
@@ -31,13 +32,15 @@ uint8_t Menu::get_menu_flag() { return this->menu_flag; }
 void Menu::draw_main() {
   ClearBackground(RED);
   // HACK: Make proper text and Add Actual background art
-  DrawText("Title Screen", opts.screen.x / 2, opts.screen.y / 2, 24, BLACK);
+  Vector2 text_size = MeasureTextEx(GetFontDefault(), "Title Screen", 24, 1);
+  DrawText("Title Screen", opts.screen.x / 2 - (text_size.x / 2), opts.screen.y / 2 - (text_size.x / 2), 24, BLACK);
 }
 
 void Menu::draw_pause() {
   ClearBackground(BLACK);
   // HACK: Make proper text and Add Actual background art
-  DrawText("Title Screen", opts.screen.x / 2, opts.screen.y / 2, 24, BLACK);
+  Vector2 text_size = MeasureTextEx(GetFontDefault(), "Pause", 24, 1);
+  DrawText("Pause", opts.screen.x / 2 - (text_size.x / 2), opts.screen.y / 2 - (text_size.y / 2), 24, WHITE);
 }
 
 void Menu::change_window_size() {

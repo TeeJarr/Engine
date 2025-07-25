@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RPG.dir/src/Debug.cpp.o"
+  "CMakeFiles/RPG.dir/src/Debug.cpp.o.d"
   "CMakeFiles/RPG.dir/src/Entities.cpp.o"
   "CMakeFiles/RPG.dir/src/Entities.cpp.o.d"
   "CMakeFiles/RPG.dir/src/Game.cpp.o"
@@ -7,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RPG.dir/src/Menu.cpp.o.d"
   "CMakeFiles/RPG.dir/src/Player.cpp.o"
   "CMakeFiles/RPG.dir/src/Player.cpp.o.d"
+  "CMakeFiles/RPG.dir/src/Save.cpp.o"
+  "CMakeFiles/RPG.dir/src/Save.cpp.o.d"
   "CMakeFiles/RPG.dir/src/UI.cpp.o"
   "CMakeFiles/RPG.dir/src/UI.cpp.o.d"
   "CMakeFiles/RPG.dir/src/init.cpp.o"

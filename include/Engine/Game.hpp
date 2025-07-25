@@ -1,8 +1,13 @@
-#include "Entities/Player.hpp"
+#pragma once
+#ifndef ENGINE_GAME_HPP_
+#define ENGINE_GAME_HPP_
+
+#include "Debug.hpp"
+#include "Entities/Characters/Player.hpp"
+#include "Flags.hpp"
 #include "Opts.hpp"
 #include "UI/Menu.hpp"
 #include "UI/UI.hpp"
-#include <cstddef>
 #include <memory>
 #include <raylib.h>
 
@@ -10,7 +15,6 @@ class Game {
   public:
   Game();
 
-  private:
   // init methods
   bool load_opts();
   bool load_assets();
@@ -33,14 +37,14 @@ class Game {
   void change_menu_flag() {
     if (IsKeyPressed(KEY_ENTER)) {
       switch (menu->get_menu_flag()) {
-        case MENU::NONE:
-          menu->set_flag(MENU::PAUSE);
+        case FLAGS::MENU::NONE:
+          menu->set_flag(FLAGS::MENU::PAUSE);
           return;
-        case MENU::MAIN:
-          menu->set_flag(MENU::NONE);
+        case FLAGS::MENU::MAIN:
+          menu->set_flag(FLAGS::MENU::NONE);
           return;
-        case MENU::PAUSE:
-          menu->set_flag(MENU::NONE);
+        case FLAGS::MENU::PAUSE:
+          menu->set_flag(FLAGS::MENU::NONE);
           return;
       }
     }
@@ -49,10 +53,14 @@ class Game {
   // Entity
   std::vector<Entity*> entities;
 
+  Debug debug;
+
   Color background_color = RAYWHITE;
   std::shared_ptr<Player> player;
   std::shared_ptr<UI> ui;
   std::unique_ptr<Menu> menu;
+  Flag flags;
 
   Opts opts;
 };
+#endif

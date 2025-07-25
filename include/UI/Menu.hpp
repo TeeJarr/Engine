@@ -3,21 +3,7 @@
 
 #include <cstdint>
 
-namespace MENU {
-  enum MENU_FLAGS {
-    MAIN,
-    PAUSE,
-    OPTIONS,
-    INVENTORY,
-    GRAPHICS,
-    SOUND,
-    KEYBINDS,
-    GAME,
-    SAVE,
-    MAP,
-    NONE,
-  };
-}
+namespace MENU {}
 
 class Menu {
   public:

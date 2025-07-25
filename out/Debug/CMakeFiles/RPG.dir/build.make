@@ -72,10 +72,24 @@ include CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/codegen:
 .PHONY : CMakeFiles/RPG.dir/codegen
 
+CMakeFiles/RPG.dir/src/Debug.cpp.o: CMakeFiles/RPG.dir/flags.make
+CMakeFiles/RPG.dir/src/Debug.cpp.o: /Users/tristan/Coding/cpp/RPG/src/Debug.cpp
+CMakeFiles/RPG.dir/src/Debug.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RPG.dir/src/Debug.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/Debug.cpp.o -MF CMakeFiles/RPG.dir/src/Debug.cpp.o.d -o CMakeFiles/RPG.dir/src/Debug.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Debug.cpp
+
+CMakeFiles/RPG.dir/src/Debug.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RPG.dir/src/Debug.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tristan/Coding/cpp/RPG/src/Debug.cpp > CMakeFiles/RPG.dir/src/Debug.cpp.i
+
+CMakeFiles/RPG.dir/src/Debug.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RPG.dir/src/Debug.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tristan/Coding/cpp/RPG/src/Debug.cpp -o CMakeFiles/RPG.dir/src/Debug.cpp.s
+
 CMakeFiles/RPG.dir/src/Entities.cpp.o: CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/src/Entities.cpp.o: /Users/tristan/Coding/cpp/RPG/src/Entities.cpp
 CMakeFiles/RPG.dir/src/Entities.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RPG.dir/src/Entities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RPG.dir/src/Entities.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/Entities.cpp.o -MF CMakeFiles/RPG.dir/src/Entities.cpp.o.d -o CMakeFiles/RPG.dir/src/Entities.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Entities.cpp
 
 CMakeFiles/RPG.dir/src/Entities.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/RPG.dir/src/Entities.cpp.s: cmake_force
 CMakeFiles/RPG.dir/src/Game.cpp.o: CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/src/Game.cpp.o: /Users/tristan/Coding/cpp/RPG/src/Game.cpp
 CMakeFiles/RPG.dir/src/Game.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RPG.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RPG.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/Game.cpp.o -MF CMakeFiles/RPG.dir/src/Game.cpp.o.d -o CMakeFiles/RPG.dir/src/Game.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Game.cpp
 
 CMakeFiles/RPG.dir/src/Game.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/RPG.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/RPG.dir/src/Menu.cpp.o: CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/src/Menu.cpp.o: /Users/tristan/Coding/cpp/RPG/src/Menu.cpp
 CMakeFiles/RPG.dir/src/Menu.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RPG.dir/src/Menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RPG.dir/src/Menu.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/Menu.cpp.o -MF CMakeFiles/RPG.dir/src/Menu.cpp.o.d -o CMakeFiles/RPG.dir/src/Menu.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Menu.cpp
 
 CMakeFiles/RPG.dir/src/Menu.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/RPG.dir/src/Menu.cpp.s: cmake_force
 CMakeFiles/RPG.dir/src/Player.cpp.o: CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/src/Player.cpp.o: /Users/tristan/Coding/cpp/RPG/src/Player.cpp
 CMakeFiles/RPG.dir/src/Player.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RPG.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RPG.dir/src/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/Player.cpp.o -MF CMakeFiles/RPG.dir/src/Player.cpp.o.d -o CMakeFiles/RPG.dir/src/Player.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Player.cpp
 
 CMakeFiles/RPG.dir/src/Player.cpp.i: cmake_force
@@ -128,10 +142,24 @@ CMakeFiles/RPG.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RPG.dir/src/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tristan/Coding/cpp/RPG/src/Player.cpp -o CMakeFiles/RPG.dir/src/Player.cpp.s
 
+CMakeFiles/RPG.dir/src/Save.cpp.o: CMakeFiles/RPG.dir/flags.make
+CMakeFiles/RPG.dir/src/Save.cpp.o: /Users/tristan/Coding/cpp/RPG/src/Save.cpp
+CMakeFiles/RPG.dir/src/Save.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RPG.dir/src/Save.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/Save.cpp.o -MF CMakeFiles/RPG.dir/src/Save.cpp.o.d -o CMakeFiles/RPG.dir/src/Save.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Save.cpp
+
+CMakeFiles/RPG.dir/src/Save.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RPG.dir/src/Save.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tristan/Coding/cpp/RPG/src/Save.cpp > CMakeFiles/RPG.dir/src/Save.cpp.i
+
+CMakeFiles/RPG.dir/src/Save.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RPG.dir/src/Save.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tristan/Coding/cpp/RPG/src/Save.cpp -o CMakeFiles/RPG.dir/src/Save.cpp.s
+
 CMakeFiles/RPG.dir/src/UI.cpp.o: CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/src/UI.cpp.o: /Users/tristan/Coding/cpp/RPG/src/UI.cpp
 CMakeFiles/RPG.dir/src/UI.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RPG.dir/src/UI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RPG.dir/src/UI.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/UI.cpp.o -MF CMakeFiles/RPG.dir/src/UI.cpp.o.d -o CMakeFiles/RPG.dir/src/UI.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/UI.cpp
 
 CMakeFiles/RPG.dir/src/UI.cpp.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/RPG.dir/src/UI.cpp.s: cmake_force
 CMakeFiles/RPG.dir/src/init.cpp.o: CMakeFiles/RPG.dir/flags.make
 CMakeFiles/RPG.dir/src/init.cpp.o: /Users/tristan/Coding/cpp/RPG/src/init.cpp
 CMakeFiles/RPG.dir/src/init.cpp.o: CMakeFiles/RPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RPG.dir/src/init.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RPG.dir/src/init.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RPG.dir/src/init.cpp.o -MF CMakeFiles/RPG.dir/src/init.cpp.o.d -o CMakeFiles/RPG.dir/src/init.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/init.cpp
 
 CMakeFiles/RPG.dir/src/init.cpp.i: cmake_force
@@ -158,26 +186,30 @@ CMakeFiles/RPG.dir/src/init.cpp.s: cmake_force
 
 # Object files for target RPG
 RPG_OBJECTS = \
+"CMakeFiles/RPG.dir/src/Debug.cpp.o" \
 "CMakeFiles/RPG.dir/src/Entities.cpp.o" \
 "CMakeFiles/RPG.dir/src/Game.cpp.o" \
 "CMakeFiles/RPG.dir/src/Menu.cpp.o" \
 "CMakeFiles/RPG.dir/src/Player.cpp.o" \
+"CMakeFiles/RPG.dir/src/Save.cpp.o" \
 "CMakeFiles/RPG.dir/src/UI.cpp.o" \
 "CMakeFiles/RPG.dir/src/init.cpp.o"
 
 # External object files for target RPG
 RPG_EXTERNAL_OBJECTS =
 
+RPG: CMakeFiles/RPG.dir/src/Debug.cpp.o
 RPG: CMakeFiles/RPG.dir/src/Entities.cpp.o
 RPG: CMakeFiles/RPG.dir/src/Game.cpp.o
 RPG: CMakeFiles/RPG.dir/src/Menu.cpp.o
 RPG: CMakeFiles/RPG.dir/src/Player.cpp.o
+RPG: CMakeFiles/RPG.dir/src/Save.cpp.o
 RPG: CMakeFiles/RPG.dir/src/UI.cpp.o
 RPG: CMakeFiles/RPG.dir/src/init.cpp.o
 RPG: CMakeFiles/RPG.dir/build.make
 RPG: /opt/homebrew/Cellar/raylib/5.5/lib/libraylib.dylib
 RPG: CMakeFiles/RPG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RPG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tristan/Coding/cpp/RPG/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable RPG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RPG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

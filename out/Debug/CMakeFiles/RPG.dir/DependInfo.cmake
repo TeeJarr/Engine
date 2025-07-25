@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/tristan/Coding/cpp/RPG/src/Debug.cpp" "CMakeFiles/RPG.dir/src/Debug.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/Debug.cpp.o.d"
   "/Users/tristan/Coding/cpp/RPG/src/Entities.cpp" "CMakeFiles/RPG.dir/src/Entities.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/Entities.cpp.o.d"
   "/Users/tristan/Coding/cpp/RPG/src/Game.cpp" "CMakeFiles/RPG.dir/src/Game.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/Game.cpp.o.d"
   "/Users/tristan/Coding/cpp/RPG/src/Menu.cpp" "CMakeFiles/RPG.dir/src/Menu.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/Menu.cpp.o.d"
   "/Users/tristan/Coding/cpp/RPG/src/Player.cpp" "CMakeFiles/RPG.dir/src/Player.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/Player.cpp.o.d"
+  "/Users/tristan/Coding/cpp/RPG/src/Save.cpp" "CMakeFiles/RPG.dir/src/Save.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/Save.cpp.o.d"
   "/Users/tristan/Coding/cpp/RPG/src/UI.cpp" "CMakeFiles/RPG.dir/src/UI.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/UI.cpp.o.d"
   "/Users/tristan/Coding/cpp/RPG/src/init.cpp" "CMakeFiles/RPG.dir/src/init.cpp.o" "gcc" "CMakeFiles/RPG.dir/src/init.cpp.o.d"
   )

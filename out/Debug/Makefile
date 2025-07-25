@@ -149,6 +149,30 @@ RPG/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/build
 .PHONY : RPG/fast
 
+src/Debug.o: src/Debug.cpp.o
+.PHONY : src/Debug.o
+
+# target to build an object file
+src/Debug.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Debug.cpp.o
+.PHONY : src/Debug.cpp.o
+
+src/Debug.i: src/Debug.cpp.i
+.PHONY : src/Debug.i
+
+# target to preprocess a source file
+src/Debug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Debug.cpp.i
+.PHONY : src/Debug.cpp.i
+
+src/Debug.s: src/Debug.cpp.s
+.PHONY : src/Debug.s
+
+# target to generate assembly for a file
+src/Debug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Debug.cpp.s
+.PHONY : src/Debug.cpp.s
+
 src/Entities.o: src/Entities.cpp.o
 .PHONY : src/Entities.o
 
@@ -245,6 +269,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Save.o: src/Save.cpp.o
+.PHONY : src/Save.o
+
+# target to build an object file
+src/Save.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Save.cpp.o
+.PHONY : src/Save.cpp.o
+
+src/Save.i: src/Save.cpp.i
+.PHONY : src/Save.i
+
+# target to preprocess a source file
+src/Save.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Save.cpp.i
+.PHONY : src/Save.cpp.i
+
+src/Save.s: src/Save.cpp.s
+.PHONY : src/Save.s
+
+# target to generate assembly for a file
+src/Save.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPG.dir/build.make CMakeFiles/RPG.dir/src/Save.cpp.s
+.PHONY : src/Save.cpp.s
+
 src/UI.o: src/UI.cpp.o
 .PHONY : src/UI.o
 
@@ -304,6 +352,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... RPG"
+	@echo "... src/Debug.o"
+	@echo "... src/Debug.i"
+	@echo "... src/Debug.s"
 	@echo "... src/Entities.o"
 	@echo "... src/Entities.i"
 	@echo "... src/Entities.s"
@@ -316,6 +367,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Save.o"
+	@echo "... src/Save.i"
+	@echo "... src/Save.s"
 	@echo "... src/UI.o"
 	@echo "... src/UI.i"
 	@echo "... src/UI.s"

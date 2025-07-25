@@ -1,10 +1,7 @@
-#include "Entities/Player.hpp"
-#include "cereal/archives/binary.hpp"
+#include "Entities/Characters/Player.hpp"
 #include "raylib.h"
-#include <filesystem>
-#include <fstream>
+#include <array>
 #include <memory>
-#include <ostream>
 #include <print>
 
 Player::Player() {
@@ -15,25 +12,51 @@ Player::Player() {
 Stats& Player::get_stats() { return stats; }
 
 void Player::move() {
-  if (IsKeyDown(KEY_UP)) {
-    get_pos().y -= 5;
-    std::println("Key Pressed UP - poistion: {}, {}", get_pos().x, get_pos().y);
-  } else if (IsKeyDown(KEY_DOWN)) {
-    get_pos().y += 5;
-    std::println("Key Pressed DOWN - poistion: {}, {}", get_pos().x, get_pos().y);
+  int key = GetKeyPressed();
+  if (key == KEY_UP || key == KEY_DOWN) {
+    last_key_y = key;
   }
-
-  if (IsKeyDown(KEY_LEFT)) {
-    get_pos().x -= 5;
-    std::println("Key Pressed LEFT - poistion: {}, {}", get_pos().x, get_pos().y);
-  } else if (IsKeyDown(KEY_RIGHT)) {
-    get_pos().x += 5;
-    std::println("Key Pressed RIGHT - poistion: {}, {}", get_pos().x, get_pos().y);
+  if (key == KEY_LEFT || key == KEY_RIGHT) {
+    last_key_x = key;
+  }
+  switch (last_key_y) {
+    case KEY_UP:
+      if (IsKeyDown(KEY_UP)) {
+        get_pos().y -= get_move_speed();
+      }
+      break;
+    case KEY_DOWN:
+      if (IsKeyDown(KEY_DOWN)) {
+        get_pos().y += get_move_speed();
+      }
+      break;
+  }
+  switch (last_key_x) {
+    case KEY_LEFT:
+      if (IsKeyDown(KEY_LEFT)) {
+        get_pos().x -= get_move_speed();
+      }
+      break;
+    case KEY_RIGHT:
+      if (IsKeyDown(KEY_RIGHT)) {
+        get_pos().x += get_move_speed();
+      }
+      break;
   }
 }
 
-void Player::draw() { DrawRectangle(get_pos().x, get_pos().y, get_size().x, get_size().y, RED); }
+float Player::get_move_speed() { return base_move_speed * GetFrameTime(); }
+
+void Player::draw() {
+  DrawRectangle(get_pos().x, get_pos().y, get_size().x, get_size().y, RED);
+  DrawRectangleLinesEx({get_size().x, get_size().y, get_size().y}, 2, WHITE);
+}
 
 void Player::update() { move(); }
 
-// Texture2D* Player::get_sprite(uint8_t num) override {}
+// template <class Archive>
+// void Player::serialize(Archive& ar) {
+//   ar(stats, get_pos().x, get_pos().y, inventory);
+// }
+
+std::unique_ptr<std::array<Texture2D, 13>>& Player::get_sprite(uint8_t num) { return sprite_array_idle; }

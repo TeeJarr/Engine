@@ -1,6 +1,12 @@
 [
 {
   "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Debug.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Debug.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/Debug.cpp",
+  "output": "CMakeFiles/RPG.dir/src/Debug.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
   "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Entities.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Entities.cpp",
   "file": "/Users/tristan/Coding/cpp/RPG/src/Entities.cpp",
   "output": "CMakeFiles/RPG.dir/src/Entities.cpp.o"
@@ -22,6 +28,12 @@
   "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Player.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Player.cpp",
   "file": "/Users/tristan/Coding/cpp/RPG/src/Player.cpp",
   "output": "CMakeFiles/RPG.dir/src/Player.cpp.o"
+},
+{
+  "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",
+  "command": "/usr/bin/c++  -I/Users/tristan/Coding/cpp/RPG/include -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++2b -arch arm64 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/RPG.dir/src/Save.cpp.o -c /Users/tristan/Coding/cpp/RPG/src/Save.cpp",
+  "file": "/Users/tristan/Coding/cpp/RPG/src/Save.cpp",
+  "output": "CMakeFiles/RPG.dir/src/Save.cpp.o"
 },
 {
   "directory": "/Users/tristan/Coding/cpp/RPG/out/Debug",

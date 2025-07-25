@@ -1,22 +1,25 @@
 #include "Engine/Game.hpp"
 #include "Engine/Opts.hpp"
+#include "Engine/Save.hpp"
 #include <filesystem>
 #include <fstream>
 #include <memory>
+#include <raylib.h>
 #include <string>
 
 Game::Game() {
   if (load_opts() && load_assets()) {
     InitWindow(opts.screen.x, opts.screen.y, "Game Window");
-    SetTargetFPS(opts.fps);
+    //   SetTargetFPS(60);
+    SetWindowFocused();
     entities.reserve(20);
     std::println("starting game loop");
     while (!WindowShouldClose()) {
       Update();
       Draw();
     }
+    player->save_serial("./RPG-Directory/Save");
     unload_assets();
-    Player::save("./RPG-Directory/Save", player);
     CloseWindow();
   } else {
     std::println("Failed to load game");
@@ -25,7 +28,7 @@ Game::Game() {
 
 void Game::Update() {
   change_menu_flag();
-  if (menu->get_menu_flag() == MENU::NONE) {
+  if (menu->get_menu_flag() == FLAGS::MENU::NONE) {
     UpdateUI();
     UpdateEntities();
     UpdateLevel();
@@ -36,12 +39,12 @@ void Game::Update() {
 }
 
 void Game::UpdateUI() {
-  if (menu->get_menu_flag() != MENU::NONE) {
+  if (menu->get_menu_flag() != FLAGS::MENU::NONE) {
     ui->update();
   }
 }
 void Game::UpdateMenus() {
-  if (menu->get_menu_flag() != MENU::NONE) {
+  if (menu->get_menu_flag() != FLAGS::MENU::NONE) {
     menu->update();
   }
 }
@@ -57,25 +60,26 @@ void Game::Draw() {
   BeginDrawing();
   ClearBackground(background_color);
   DrawMenus();
-  if (menu->get_menu_flag() != MENU::MAIN) {
+  if (menu->get_menu_flag() != FLAGS::MENU::MAIN) {
     DrawLevel();
     DrawEntities();
     DrawUI();
   }
+  debug.draw_frame_info(true);
   EndDrawing();
 }
 
 void Game::DrawUI() {
-  if (menu->get_menu_flag() != MENU::NONE) {
+  if (menu->get_menu_flag() != FLAGS::MENU::NONE) {
     ui->draw();
   }
 }
 void Game::DrawMenus() {
   switch (menu->get_menu_flag()) {
-    case MENU::MAIN:
+    case FLAGS::MENU::MAIN:
       menu->draw_main();
       return;
-    case MENU::PAUSE:
+    case FLAGS::MENU::PAUSE:
       menu->draw_pause();
       return;
   }
@@ -89,10 +93,14 @@ void Game::DrawEntities() {
 void Game::DrawLevel() {}
 
 bool Game::load_assets() {
-  player = Player::load("./RPG-Directory/Save");
+  player = std::make_shared<Player>();
+  player->load(std::string("./RPG-Directory/Save"));
   std::println("player fully loaded");
+  std::println("Player location: {},{}", player->get_pos().x, player->get_pos().y);
   ui = std::make_shared<UI>(player);
   menu = std::make_unique<Menu>();
+  if (player == nullptr || ui == nullptr || menu == nullptr) return false;
+
   return true;
 }
 

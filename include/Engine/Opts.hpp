@@ -3,18 +3,13 @@
 #include "raylib.h"
 
 struct Opts {
-  static Vec2 screen;
+  static Vector2 screen;
   static int fps;
   static int text_speed;
   static float difficulty;
-
-  template <class Archive>
-  void serialize(Archive& ar) {
-    ar(screen, fps, text_speed, difficulty);
-  }
 };
 
-inline Vec2 Opts::screen;
+inline Vector2 Opts::screen;
 inline int Opts::fps;
 inline int Opts::text_speed;
 inline float Opts::difficulty;
